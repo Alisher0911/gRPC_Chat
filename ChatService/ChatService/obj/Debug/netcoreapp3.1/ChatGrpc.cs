@@ -21,6 +21,13 @@ namespace ChatService {
         __Marshaller_Message,
         __Marshaller_Message);
 
+    static readonly grpc::Method<global::ChatService.Message, global::ChatService.Message> __Method_Send = new grpc::Method<global::ChatService.Message, global::ChatService.Message>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Send",
+        __Marshaller_Message,
+        __Marshaller_Message);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -36,6 +43,11 @@ namespace ChatService {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task<global::ChatService.Message> Send(global::ChatService.Message request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -43,7 +55,8 @@ namespace ChatService {
     public static grpc::ServerServiceDefinition BindService(ChatRoomServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_Join, serviceImpl.Join).Build();
+          .AddMethod(__Method_Join, serviceImpl.Join)
+          .AddMethod(__Method_Send, serviceImpl.Send).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -53,6 +66,7 @@ namespace ChatService {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ChatRoomServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_Join, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::ChatService.Message, global::ChatService.Message>(serviceImpl.Join));
+      serviceBinder.AddMethod(__Method_Send, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ChatService.Message, global::ChatService.Message>(serviceImpl.Send));
     }
 
   }

@@ -4,6 +4,7 @@ option csharp_namespace = "ChatService";
 
 service ChatRoomService {
     rpc Join(stream Message) returns (stream Message);
+    rpc Send(Message) returns (Message);
 }
 
 message RoomLookup {
@@ -17,4 +18,5 @@ message ChatRooms {
 message Message {
     string user = 1;
     string text = 2;
+    int32 room = 3;
 }

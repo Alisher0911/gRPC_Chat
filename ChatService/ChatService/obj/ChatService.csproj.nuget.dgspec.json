@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alisher/Projects/ChatService/ChatService/ChatService.csproj": {}
+    "/Users/alisher/Projects/gRPC Chat/ChatService/ChatService/ChatService.csproj": {}
   },
   "projects": {
-    "/Users/alisher/Projects/ChatService/ChatService/ChatService.csproj": {
+    "/Users/alisher/Projects/gRPC Chat/ChatService/ChatService/ChatService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alisher/Projects/ChatService/ChatService/ChatService.csproj",
+        "projectUniqueName": "/Users/alisher/Projects/gRPC Chat/ChatService/ChatService/ChatService.csproj",
         "projectName": "ChatService",
-        "projectPath": "/Users/alisher/Projects/ChatService/ChatService/ChatService.csproj",
+        "projectPath": "/Users/alisher/Projects/gRPC Chat/ChatService/ChatService/ChatService.csproj",
         "packagesPath": "/Users/alisher/.nuget/packages/",
-        "outputPath": "/Users/alisher/Projects/ChatService/ChatService/obj/",
+        "outputPath": "/Users/alisher/Projects/gRPC Chat/ChatService/ChatService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/alisher/.config/NuGet/NuGet.Config"
+          "/Users/alisher/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

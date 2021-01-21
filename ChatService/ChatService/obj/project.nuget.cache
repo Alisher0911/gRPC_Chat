@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/U4xSzxBVv9vFp6e2R/sNC4U/teKHz/9C7oSu6gkVrq9PP9cjtZUKHqSJWxaHUA9nO51vx3HZDaDhwauVg6RTQ==",
+  "dgSpecHash": "E++bHuNfLn5+Figk4j8MuSaTqNzzLqT1HowK7YcqT/wahwb0utI++Hf0pWIqbxi1opsVLaXVb9zeunxkPy5AbQ==",
   "success": true,
-  "projectFilePath": "/Users/alisher/Projects/ChatService/ChatService/ChatService.csproj",
+  "projectFilePath": "/Users/alisher/Projects/gRPC Chat/ChatService/ChatService/ChatService.csproj",
   "expectedPackageFiles": [
     "/Users/alisher/.nuget/packages/google.protobuf/3.11.2/google.protobuf.3.11.2.nupkg.sha512",
     "/Users/alisher/.nuget/packages/grpc.aspnetcore/2.27.0/grpc.aspnetcore.2.27.0.nupkg.sha512",
